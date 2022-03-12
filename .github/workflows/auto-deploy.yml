@@ -1,0 +1,24 @@
+name: Deploy to Amazon EKS and ECS
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy-eks:
+    name: Deploying eks
+    runs-on: ubuntu-latest
+    steps:
+    - name: checkout to my repository in actions
+      uses: actions/checkout@v2
+    - name: run a stupied command
+      run: echo comming soon...
+  deploy-ecs:
+    name: Deploying ecs
+    runs-on: ubuntu-latest
+    steps:
+    - name: checkout to my repository in actions
+      uses: actions/checkout@v2
+    - name: run a stupied command
+      run: echo comming soon...
